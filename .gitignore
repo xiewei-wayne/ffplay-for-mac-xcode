@@ -5,3 +5,7 @@ project.xcworkspace
 
 xcuserdata
 
+
+SDL-1.2.15/
+
+ffmpeg-1.0/
