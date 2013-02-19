@@ -12,8 +12,10 @@
 		D54E9BE0159B0E9800BB3E0F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D54E9BDF159B0E9800BB3E0F /* QuartzCore.framework */; };
 		D54E9BE2159B0E9D00BB3E0F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D54E9BE1159B0E9D00BB3E0F /* Cocoa.framework */; };
 		D54E9BE6159B11A200BB3E0F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D54E9BE5159B11A200BB3E0F /* libz.dylib */; };
+		D572E76D16D34F9400B3E66B /* ffmpeg.c in Sources */ = {isa = PBXBuildFile; fileRef = D572E76C16D34F9400B3E66B /* ffmpeg.c */; };
+		D572E77016D34FB900B3E66B /* ffmpeg_filter.c in Sources */ = {isa = PBXBuildFile; fileRef = D572E76E16D34FB900B3E66B /* ffmpeg_filter.c */; };
+		D572E77116D34FB900B3E66B /* ffmpeg_opt.c in Sources */ = {isa = PBXBuildFile; fileRef = D572E76F16D34FB900B3E66B /* ffmpeg_opt.c */; };
 		D5AAA4E91642AEC300F98583 /* cmdutils.c in Sources */ = {isa = PBXBuildFile; fileRef = D5AAA4E81642AEC300F98583 /* cmdutils.c */; };
-		D5AAA4EB1642AED300F98583 /* ffplay.c in Sources */ = {isa = PBXBuildFile; fileRef = D5AAA4EA1642AED300F98583 /* ffplay.c */; };
 		D5AAA5021642B24F00F98583 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AAA4F11642B24B00F98583 /* libavcodec.a */; };
 		D5AAA5031642B24F00F98583 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AAA4F21642B24B00F98583 /* libavdevice.a */; };
 		D5AAA5041642B24F00F98583 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AAA4F31642B24B00F98583 /* libavfilter.a */; };
@@ -43,6 +45,9 @@
 		D54E9BDF159B0E9800BB3E0F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D54E9BE1159B0E9D00BB3E0F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D54E9BE5159B11A200BB3E0F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D572E76C16D34F9400B3E66B /* ffmpeg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ffmpeg.c; path = "ffmpeg-1.0/ffmpeg.c"; sourceTree = SOURCE_ROOT; };
+		D572E76E16D34FB900B3E66B /* ffmpeg_filter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ffmpeg_filter.c; path = "ffmpeg-1.0/ffmpeg_filter.c"; sourceTree = SOURCE_ROOT; };
+		D572E76F16D34FB900B3E66B /* ffmpeg_opt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ffmpeg_opt.c; path = "ffmpeg-1.0/ffmpeg_opt.c"; sourceTree = SOURCE_ROOT; };
 		D5AAA4E81642AEC300F98583 /* cmdutils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmdutils.c; path = "ffmpeg-1.0/cmdutils.c"; sourceTree = SOURCE_ROOT; };
 		D5AAA4EA1642AED300F98583 /* ffplay.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ffplay.c; path = "ffmpeg-1.0/ffplay.c"; sourceTree = SOURCE_ROOT; };
 		D5AAA4F11642B24B00F98583 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavcodec.a; sourceTree = "<group>"; };
@@ -100,6 +105,9 @@
 		D54E9BCB159B0ABC00BB3E0F /* FFPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				D572E76E16D34FB900B3E66B /* ffmpeg_filter.c */,
+				D572E76F16D34FB900B3E66B /* ffmpeg_opt.c */,
+				D572E76C16D34F9400B3E66B /* ffmpeg.c */,
 				D5AAA4EA1642AED300F98583 /* ffplay.c */,
 				D5AAA4E81642AEC300F98583 /* cmdutils.c */,
 			);
@@ -185,7 +193,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5AAA4E91642AEC300F98583 /* cmdutils.c in Sources */,
-				D5AAA4EB1642AED300F98583 /* ffplay.c in Sources */,
+				D572E76D16D34F9400B3E66B /* ffmpeg.c in Sources */,
+				D572E77016D34FB900B3E66B /* ffmpeg_filter.c in Sources */,
+				D572E77116D34FB900B3E66B /* ffmpeg_opt.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
